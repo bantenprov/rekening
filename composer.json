@@ -1,0 +1,39 @@
+{
+    "name": "bantenprov/rekening",
+    "description": "Rekening",
+    "authors": [
+        {
+            "name": "bantenprov",
+            "email": "developer.bantenprov@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "support": {
+      "source": "https://github.com/bantenprov/rekening,",
+      "issues": "https://github.com/bantenprov/rekening/issues",
+      "wiki": "https://github.com/bantenprov/rekening/wiki"
+    },
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.5.*"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "psr-4": {
+            "Bantenprov\\Rekening\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bantenprov\\Rekening\\RekeningServiceProvider"
+            ],
+            "aliases": {                
+                "Rekening": "Bantenprov\\Rekening\\Facades\\Rekening"
+            }
+        }
+    }
+}
